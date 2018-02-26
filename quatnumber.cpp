@@ -50,7 +50,7 @@ QString quatNumber::sub(quatNumber a, quatNumber b) {
     QString res = "";
     int len, digA, digB, digR;
     bool transition = false;
-    if (a.value < b.value) {
+    if (a.value < b.value) { //there's no reason to write custom comparision function for quaternary numbers because it will work exactly the same way
         return "ERROR";
     }
     else if ( numB.length() < numA.length()) {
